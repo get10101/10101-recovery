@@ -1,0 +1,15 @@
+[package]
+name = "get10101-recovery"
+version = "0.1.0"
+edition = "2021"
+
+# See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
+
+[dependencies]
+bdk = { version = "0.28", package = "bdk", features = ["key-value-db", "electrum"] }
+bitcoin = "0.29.2"
+anyhow = "1"
+bip39 = { version = "2", features = ["rand_core"] }
+hex = "0.4"
+hkdf = "0.12"
+sha2 = "0.10"
